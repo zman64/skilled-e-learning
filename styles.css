@@ -62,6 +62,7 @@ button {
     font-size: 40px;
     line-height: 50.4px;
     margin-bottom: 26px;
+    min-width: 343px;
 }
 
 .heroLeft__content {
