@@ -62,7 +62,7 @@ button {
     font-size: 40px;
     line-height: 50.4px;
     margin-bottom: 26px;
-    min-width: 343px;
+    /* min-width: 343px; */
 }
 
 .heroLeft__content {
@@ -164,4 +164,10 @@ button {
     line-height: 28px;
     padding: 10px 24px;
     background: linear-gradient(#4851ff, #f02aa6);
+}
+
+@media only screen and (max-width: 360px) {
+    .heroLeft__title {
+        font-size: 34px;
+    }
 }
