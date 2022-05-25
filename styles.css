@@ -5,9 +5,9 @@
 }
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: #F2F2F2;
+    background: linear-gradient(white, #f0f1ff);
 }
 
 .container {
@@ -15,8 +15,8 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     max-width: 100%;
-    padding: 16px;
-    margin: auto;
+    margin: 16px;
+    /* margin: auto; */
 }
 
 button {
@@ -47,7 +47,6 @@ button {
     color: #13183F;
     font-size: 28px;
     font-weight: 800;
-
 }
 
 .heroLeft {
@@ -70,18 +69,98 @@ button {
     font-size: 16px;
     line-height: 26px;
     color: #83869A;
+    /* text-align: center; */
 }
 
 .heroLeft__button {
     line-height: 26px;
     font-size: 16px;
     padding: 15px 38px;
-    background: linear-gradient(#ff6f48,#F02aa6);
+    background: linear-gradient(#ff6f48 0%,#F02aa6 100%);
     margin-top: 24px;
     margin-bottom: 46px;
-
 }
 
 .cards {
+    /* margin-top: 66px; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     
+}
+
+.cards__top {
+    background: linear-gradient(180deg, #ff6f48 0%,#F02aa6 100%);
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    border-radius: 10px;
+    padding: 24px 29px 32px 28px;
+    
+}
+
+.cards__card {
+    padding-left: 28px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+}
+
+.cards__image {
+    position: relative;
+    /* left: 20px; */
+    top: -30px;
+}
+
+.cards__title {
+    color: #13183f;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25.2px;
+    margin-bottom: 16px;
+    margin-top: -15px;
+}
+
+.cards__content {
+    font-weight: 500;
+    color: #83869a;
+    font-size: 16px;
+    line-height: 26px;
+    /* text-align: center; */
+}
+
+.cards__button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #f74780;
+    background-color: white;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #13183f;
+    height: 120px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+.footer__skilled {
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.footer__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 10px 24px;
+    background: linear-gradient(#4851ff, #f02aa6);
 }
