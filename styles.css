@@ -4,12 +4,9 @@
     box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-}
 
 body {
-    /* height: 100vh; */
+    height: 100vh;
     font-family: 'Plus Jakarta Sans', sans-serif;
     background: linear-gradient(white, #f0f1ff);
 }
