@@ -29,9 +29,24 @@
       </div>
       <button class="button heroLeft__button heroLeft__button--primary">Get Started</button>
     </div>
-    <div class="heroRight">
-      <img class="heroRight__image" src="./assets/image-hero-mobile.webp" alt="">
-    </div>
+    <picture class="heroRight">
+
+      <source media="(min-width: 1024px)" 
+      srcset="./assets/image-hero-desktop.webp,
+              ./assets/image-hero-desktop@2x.webp 2x" alt=""
+      >
+
+      <source media="(min-width: 768px)" 
+      srcset="./assets/image-hero-tablet.webp,
+              ./assets/image-hero-tablet@2x.webp 2x" alt="">
+      <img class="heroRight__image" 
+
+      src="./assets/image-hero-mobile.webp" 
+      alt="" 
+      srcset="./assets/image-hero-mobile.webp,
+              ./assets/image-hero-mobile@2x.webp 2x"
+              >
+    </picture>
     <div class="cards">
       <div class="cards__top">Check out our most popular courses!</div>
       <div class="cards__card">

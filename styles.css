@@ -6,17 +6,19 @@
 
 html {
     /* height: 100%; */
+    min-width: 300px;
 }
 body {
     /* height: 100%; */
     font-family: 'Plus Jakarta Sans', sans-serif;
     background: linear-gradient(white, #f0f1ff);
+    
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: min-content(200px);
+    grid-template-rows: auto-fit;
     /* max-width: 100%; */
     margin: 16px;
     /* margin: auto; */
@@ -54,10 +56,16 @@ button {
 
 .heroLeft {
     grid-row: 2 / 3;
+
 } 
 
+.heroRight {
+    text-align: center;
+    display: block;
+}
 .heroRight__image {
-    width: 100%;
+    max-width: 100%;
+    /* text-align: center; */
 }
 
 .heroLeft__title {
@@ -65,6 +73,7 @@ button {
     font-size: 40px;
     line-height: 50.4px;
     margin-bottom: 26px;
+    min-width: 200px;
     /* min-width: 343px; */
 }
 
@@ -174,4 +183,66 @@ button {
     .heroLeft__title {
         font-size: 34px;
     }
+    .heroRight {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 550px auto;
+    padding-top: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow: hidden;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+    }
+
+    .heroLeft__title {
+        margin-top: 50px;
+    }
+
+    .header {
+        grid-column: span 2;
+    }
+
+    .heroRight {
+        position: relative;
+    }
+
+    .heroRight__image {
+        position: absolute;
+        top: -220px;
+        left: 20px;
+
+        /* object-fit: contain; */
+        /* object-position: bottom; */
+        max-width: 700px;
+        height: auto;
+    }
+    .cards {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        grid-column: span 2;
+    }
+    .cards__card {
+        max-width: 340px;
+        /* flex-shrink: 1; */
+    }
+    .cards__top {
+        max-width: 340px;
+        padding-top: 56px;
+    }
+
+    footer {
+        margin-top: 86px;
+    }
+
 }
