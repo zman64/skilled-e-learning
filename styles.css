@@ -6,7 +6,7 @@
 
 
 body {
-    height: 100vh;
+    height: 100%;
     font-family: 'Plus Jakarta Sans', sans-serif;
     background: linear-gradient(white, #f0f1ff);
 }
