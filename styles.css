@@ -246,3 +246,73 @@ button {
     }
 
 }
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        padding-left: 165px;
+        padding-right: 165px;
+        grid-template-rows: auto 720px auto;
+    }
+
+    .heroLeft {
+        max-width: 460px;
+        /* margin-bottom: 180px; */
+    }
+    .heroLeft__title {
+        margin-top: 150px;
+        font-size: 56px;
+        line-height: 70.56px;
+        font-weight: 800;
+    }
+    .heroLeft__content {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 500;
+    }
+
+    button {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 700;
+    }
+    .heroRight__image {
+        max-width: 1500px;
+        left: 13rem;
+        top: -17rem
+    }
+
+    .cards {
+        width: 100%;
+    }
+    .cards__top {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 800;
+    }
+    .cards__title {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 800;
+    }
+    .cards__content {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 500;
+    }
+    .cards__card {
+        padding-left: 32px;
+        padding-right: 32px;
+        /* margin-top: 88px; */
+        width: 350px;
+    }
+    .cards__title {
+        margin-top: 0px;
+    }
+    .footer__skilled {
+        padding-left: 165px;
+        /* padding-right: 165px; */
+    }
+    .footer__button {
+        margin-right: 205px;
+    }
+}
