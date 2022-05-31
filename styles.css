@@ -46,6 +46,11 @@ button {
     background-color: #13183f;
     color: white;
     padding: 11px 24px;
+    z-index: 20;
+}
+
+.header__button:hover {
+    background-color: #666ca3;
 }
 
 .header__skilled {
@@ -94,6 +99,10 @@ button {
     margin-bottom: 46px;
 }
 
+.heroLeft__button:hover {
+    opacity: 50%;
+}
+
 .cards {
     /* margin-top: 66px; */
     display: flex;
@@ -140,6 +149,7 @@ button {
     color: #83869a;
     font-size: 16px;
     line-height: 26px;
+    
     /* text-align: center; */
 }
 
@@ -151,6 +161,10 @@ button {
     background-color: white;
     margin-top: 24px;
     margin-bottom: 32px;
+}
+
+.cards__button:hover {
+    color: #ffa7c3;
 }
 
 .footer {
@@ -177,6 +191,10 @@ button {
     line-height: 28px;
     padding: 10px 24px;
     background: linear-gradient(#4851ff, #f02aa6);
+}
+
+.footer__button:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.5);
 }
 
 @media only screen and (max-width: 360px) {
@@ -298,6 +316,7 @@ button {
         font-size: 18px;
         line-height: 28px;
         font-weight: 500;
+        min-height: 112px;
     }
     .cards__card {
         padding-left: 32px;
@@ -315,4 +334,8 @@ button {
     .footer__button {
         margin-right: 205px;
     }
+    footer {
+        margin-top: 140px;
+    }
+    
 }
