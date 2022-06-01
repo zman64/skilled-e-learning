@@ -275,7 +275,7 @@ button {
         padding-right: 0;
         grid-template-rows: auto 720px auto;
         grid-template-columns: 40% 37%;
-        max-width: 80%;
+        /* max-width: 80%; */
         margin: 0 auto;
         /* text-align: center; */
     }
@@ -311,15 +311,16 @@ button {
     .heroRight__image {
         position: absolute;
         max-width: none;
-        top: -13rem;
-        left: -3rem;
+        top: -15rem;
+        left: 6rem;
 
     }
 
     .cards {
-        max-width: 1110px;
-        gap: 30px;
+        width: 100%;
+        gap: 3%;
         row-gap: 56px;
+        justify-content: space-around;
     }
 
     .cards__top {
@@ -353,11 +354,11 @@ button {
     }
 
     .footer__skilled {
-        padding-left: 24%;
+        padding-left: 15%;
     }
 
     .footer {
-        padding-right: 24%;
+        padding-right: 15%;
     }
    
 }
