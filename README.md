@@ -27,20 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Skilled-E-Learning](./SkilledeLearningScreenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution To Compare My Code With](https://www.frontendmentor.io/solutions/skilled-elearning-css-grid-L4_Q3XaGJG)
+- Live Site URL: [Link to Site](https://zman64.github.io/skilled-e-learning/)
 
 ## My process
 
@@ -51,59 +43,71 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+- How to make the images responsive depending on what device it's on.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<picture class="heroRight">
+
+      <source media="(min-width: 1024px)" 
+      srcset="./assets/image-hero-desktop.webp,
+              ./assets/image-hero-desktop@2x.webp 2x" alt="Woman drinking coffee"
+      >
+
+      <source media="(min-width: 768px)" 
+      srcset="./assets/image-hero-tablet.webp,
+              ./assets/image-hero-tablet@2x.webp 2x" alt="Woman drinking coffee">
+      <img class="heroRight__image" 
+
+      src="./assets/image-hero-mobile.webp" 
+      alt="Woman drinking coffee" 
+      srcset="./assets/image-hero-mobile.webp,
+              ./assets/image-hero-mobile@2x.webp 2x"
+              >
+    </picture>
 ```
+
+- Engage on how to postion the hero image in desktop and tablet mode. I had a hard time
+on how to position this in combination with how to layout column width for CSS Grid. Since the image
+goes outside of the container I decided to make it absolute and manually position it relative to the container
+it is in.
+
+- I set a max width on the container that is close to the figma sketch. The result being that the container will not be fluid
+on wider screens.
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+ .heroRight {
+        position: relative;
+        right: 0;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        
+    }
+    .heroRight__image {
+        position: absolute;
+        max-width: none;
+        top: -13rem;
+        left: -3rem;
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+    }
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- I would like to refine the best way to position the overall container so it's still responsive on really wide screens instead
+of being set with a max width and positioned in the middle.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- I would like to continue the best/straight forwards ways to position hero images and make them responsive and fluid. It was difficult for me on how to best approach styling and positioning the image so it fits well with the rest of the layout.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Responsive Images](https://www.youtube.com/watch?v=Q5m8cCGdiBo) - This is a video that helped me to understand better how to make images more responsive.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Zachary Kahlig](www.linkedin.com/in/zachary-kahlig-0a595912a)
+- Frontend Mentor - [@zman64](https://www.frontendmentor.io/profile/zman64)
