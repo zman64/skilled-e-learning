@@ -298,18 +298,19 @@ button {
         font-weight: 700;
     }
     .heroRight {
-        position: absolute;
+        position: relative;
         right: 0;
-        max-width: 50%;
+        max-width: 100%;
         top: 0;
-        left: 50%;
+        left: 0;
+        bottom: 0;
         
     }
     .heroRight__image {
         position: absolute;
         max-width: none;
-        top: -10rem;
-        right: -0rem;
+        top: -15rem;
+        left: 0rem;
 
     }
 
@@ -344,13 +345,12 @@ button {
     .cards__title {
         margin-top: 0px;
     }
-    .footer__skilled {
-        padding-left: 400px;
-    }
-    .footer__button {
-        margin-right: 400px;
-    }
+   
     footer {
+        /* margin-top: 140px; */
+        max-width: 1110px;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 140px;
     }
    
