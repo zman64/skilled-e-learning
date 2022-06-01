@@ -311,22 +311,28 @@ button {
     .heroRight__image {
         position: absolute;
         max-width: none;
-        top: -15rem;
-        left: 6rem;
+        top: -17rem;
+        left: 0rem;
 
     }
 
     .cards {
         width: 100%;
-        gap: 3%;
+        gap: 30px;
         row-gap: 56px;
-        justify-content: space-around;
+        justify-content: center;
+    }
+
+    .cards__button {
+        margin-top: 35px;
     }
 
     .cards__top {
         font-size: 32px;
         line-height: 40px;
         font-weight: 800;
+        width: 30%;
+        height: 45%;
     }
     .cards__title {
         font-size: 24px;
@@ -337,12 +343,14 @@ button {
         font-size: 18px;
         line-height: 28px;
         font-weight: 500;
-        min-height: 112px;
+        /* min-height: 112px; */
+        height: 30%;
     }
     .cards__card {
         padding-left: 32px;
         padding-right: 32px;
-        max-width: 349px;
+        width: 30%;
+        min-height: 40%;
     }
     .cards__title {
         margin-top: 0px;
