@@ -64,13 +64,13 @@ button {
 
 } 
 
-.heroRight {
-    text-align: center;
-    display: block;
-}
 .heroRight__image {
     max-width: 100%;
     /* text-align: center; */
+}
+
+.heroRight {
+    text-align: center;
 }
 
 .heroLeft__title {
@@ -230,18 +230,21 @@ button {
     }
 
     .heroRight {
-        position: relative;
+        /* position: relative; */
+        text-align: left;
+        /* top: 12rem; */
     }
 
     .heroRight__image {
         position: absolute;
-        top: -220px;
-        left: 20px;
+        /* top: -220px;
+        left: 20px; */
 
         /* object-fit: contain; */
         /* object-position: bottom; */
         max-width: 700px;
         height: auto;
+        top: -5rem;
     }
     .cards {
         flex-direction: row;
@@ -267,14 +270,15 @@ button {
 
 @media only screen and (min-width: 1024px) {
     .container {
-        padding-left: 165px;
-        padding-right: 165px;
+        padding-left: 0;
+        padding-right: 0;
         grid-template-rows: auto 720px auto;
+        grid-template-columns: 40% 50%;
+        max-width: 1110px;
+        margin: 0 auto;
     }
-
     .heroLeft {
         max-width: 460px;
-        /* margin-bottom: 180px; */
     }
     .heroLeft__title {
         margin-top: 150px;
@@ -293,14 +297,28 @@ button {
         line-height: 28px;
         font-weight: 700;
     }
+    .heroRight {
+        position: absolute;
+        right: 0;
+        max-width: 50%;
+        top: 0;
+        left: 50%;
+        
+    }
     .heroRight__image {
-        max-width: 1500px;
-        left: 13rem;
-        top: -17rem
+        position: absolute;
+        max-width: none;
+        top: -10rem;
+        right: -0rem;
+
     }
 
     .cards {
-        width: 100%;
+        width: 1110px;
+        /* gap: 32px; */
+        
+        gap: 30px;
+        row-gap: 56px;
     }
     .cards__top {
         font-size: 32px;
@@ -321,21 +339,19 @@ button {
     .cards__card {
         padding-left: 32px;
         padding-right: 32px;
-        /* margin-top: 88px; */
-        width: 350px;
+        max-width: 350px;
     }
     .cards__title {
         margin-top: 0px;
     }
     .footer__skilled {
-        padding-left: 165px;
-        /* padding-right: 165px; */
+        padding-left: 400px;
     }
     .footer__button {
-        margin-right: 205px;
+        margin-right: 400px;
     }
     footer {
         margin-top: 140px;
     }
-    
+   
 }
