@@ -275,7 +275,7 @@ button {
         padding-right: 0;
         grid-template-rows: auto 720px auto;
         grid-template-columns: 40% 37%;
-        max-width: 75%;
+        max-width: 80%;
         margin: 0 auto;
         /* text-align: center; */
     }
@@ -312,7 +312,7 @@ button {
         position: absolute;
         max-width: none;
         top: -13rem;
-        left: -7rem;
+        left: -3rem;
 
     }
 
